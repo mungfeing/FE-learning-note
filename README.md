@@ -192,3 +192,77 @@
       max-width: 100%;
   }
   ```
+  
+  
+ ### 7th May 
+  
+ ###### some concepts
+ `line-height` For body:1.6 
+
+`text-transform:uppercase/capitalize/lowercase`
+
+`letter-spacing:1px-2px`
+
+###### rgba
+
+- `color: rgb()` and `rgba()`
+
+- /* a = alpha */ /* alpha = opacity / transparency */
+- a=[0,1]
+
+#### Background
+
+##### `background-position`
+
+###### Numerical values
+
+- A single value will move it that much on both the x and y axis
+- If you include 2 values, the first will be on the x-axis, the second on the y-axis
+
+###### Keywords
+
+We can also assign keywords, such as `top left`, `bottom center`, `center right`, etc. This can be useful to control the position of the image when using `background-size: cover`.
+
+##### Background-image
+
+`background-image: url(folder/filename.jpg); or url(../images/my-image.jpg)`
+
+- add a background-color to prevent once the image fails loading.
+
+##### `Background-size`
+
+When giving it numerical values, we can control the exact size of our image.
+
+- `auto` is the default, nothing will change
+
+- `contain` ensures that the *entire* image is visible. It might seem strange, but it can be used for something like a logo that's set as a background image, along with `no-repeat`
+- `cover` will ensure that the image covers the entire space without repeating, but it will result in the image being cropped
+
+##### `background-repeat`
+
+We can prevent our image from repeating, either at all, or having it only repeat along a single axis.
+
+###### Values
+
+- `repeat` - the default
+- `no-repeat` - the image will not repeat at all
+- `repeat-x` - it will only repeat on the x-axis
+- `repeat-y` - it will only repeat on the y-axis
+
+
+
+
+
+#### The `+` combinator
+
+This combinator will add a style if a selector is an adjacent sibling. So in this example, we see `h1 + p`. That means those styles will only apply to paragraphs that are directly after an h1.
+
+#### The `~` combinator
+
+This is the general sibling combinator. It will grab any selector that is a sibling to the first. So if we write `h1 ~ p` it will select all paragraphs that are siblings to the h1.
+
+
+
+#### margin
+
+- when the space between two line is too big and changing the margin to 0  doesn't work maybe try turning both lines' margin to 0.
